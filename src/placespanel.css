@@ -1,0 +1,9 @@
+div.places{
+    position:fixed;
+    top: 52px;
+    left: 20px;
+    z-index:2;
+
+    width:200px;
+    background-color:#fff
+}
