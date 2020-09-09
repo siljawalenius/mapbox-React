@@ -18,20 +18,16 @@ class Toggler extends Component {
        {name: "Outdoors", url: 'mapbox://styles/mapbox/outdoors-v11'}
     ]
 
-    const buttons =  styles.map(style => {
+    const buttons =  styles.map((style, index) => {
         let className = ""
         if (style.url === this.props.app.state.style){
             className= 'selected'
         }
 
-
-
-
-        return <button className = {className} onClick = {() => this.setLayer(style.url)}>
+        return <button className = {className} key = {index} onClick = {() => this.setLayer(style.url)}>
             {style.name}
         </button>
     })
-
 
     return (
         <div className="toggler"> 
@@ -43,7 +39,6 @@ class Toggler extends Component {
         </div>
 
     )
-   
   }
 }
 
