@@ -18,7 +18,6 @@ class PlaceItem extends Component {
     render(){
         const app = this.props.app
         const map = app.state.map 
-
         const place = this.props.place
 
         if (map){
