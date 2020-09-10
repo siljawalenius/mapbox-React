@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import PlaceItem from './PlaceItem'
+import PlaceItem from './PlaceItem.js'
 import './placespanel.css'
 
 class PlacesPanel extends Component{
