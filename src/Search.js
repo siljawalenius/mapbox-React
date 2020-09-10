@@ -56,7 +56,8 @@ class Search extends Component {
             center: [firstResult.center[0], firstResult.center[1]],
             zoom: 12
         })
-
+   
+        
 
       });
   }
